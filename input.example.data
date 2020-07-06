@@ -1,0 +1,5 @@
+sample1 lpath/sample1/reads.fq.gz spath/sample1/reads1.fq.gz spath/sample1/reads2.fq.gz
+sample2 lpath/sample2/reads.fq.gz spath/sample2/reads1.fq.gz spath/sample2/reads2.fq.gz
+sample3 lpath/sample3/reads.fq.gz spath/sample3/reads1.fq.gz spath/sample3/reads2.fq.gz
+sample4 lpath/sample4/reads.fq.gz spath/sample4/reads1.fq.gz spath/sample4/reads2.fq.gz
+sample5 lpath/sample5/reads.fq.gz spath/sample5/reads1.fq.gz spath/sample5/reads2.fq.gz

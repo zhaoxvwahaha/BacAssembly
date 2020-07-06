@@ -1,1 +1,1 @@
-# BacAssembly
+hybrid assembly pipeline for bacteria
