@@ -1,0 +1,59 @@
+{% set name = "BacAssembly" %}
+{% set version = "1.1.0" %}
+{% set sha256 = "**********" %}
+
+package:
+#  name: {{ name|lower }}
+#  version: {{ version }}
+
+source:
+#  url: https://github.com/ohmeta/{{ name }}/archive/v{{ version }}.tar.gz
+#  sha256: {{ ********** }}
+
+
+build:
+  noarch: python
+  number: 0
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  entry_points:
+    - metapi = metapi.corer:main
+
+requirements:
+  host:
+    - python >=3.6
+    - pip
+  run:
+    - porechop
+    - NanoFilt
+    - NanoStat
+    - fastp
+    - SOAPnuke
+    - flye
+    - bwa
+    - racon
+    - medaka_consensus
+    - pilon
+    - circlator
+    - unicycler
+
+
+test:
+  imports:
+    - 
+  commands:
+    - metapi --version
+    - metapi init --help
+    - metapi denovo_wf --help
+
+about:
+  home: https://github.com/zhaoxvwahaha/BacAssembly
+  summary: 'hybrid assembly and polish using short and long reads'
+  license: GPL3
+  license_family: GPL
+
+extra:
+  identifiers:
+    - biotools:metapi
+  recipe-maintainers:
+    - alienzj
+© 2020 GitHub, Inc.

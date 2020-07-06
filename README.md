@@ -135,4 +135,3 @@ running the software, please create [a new issue](https://github.com/zhaoxywahah
 ## License
 
 This module is licensed under the terms of the [GPLv3 license](https://opensource.org/licenses/GPL-3.0).
-
