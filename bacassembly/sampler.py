@@ -1,12 +1,8 @@
 #!/usr/bin/env python
 
-import glob
-import gzip
 import os
 import sys
-import time
 import pandas as pd
-from Bio import bgzf
 
 
 def parse_samples(config):

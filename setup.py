@@ -4,7 +4,7 @@ import os
 import sys
 from setuptools import setup
 
-exec(open("metapi/__about__.py").read())
+exec(open("bacassembly/__about__.py").read())
 
 if sys.argv[-1] == "publish":
     os.system("python setup.py sdist upload")
