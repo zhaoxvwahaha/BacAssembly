@@ -17,21 +17,17 @@ ______             ___                         _     _
 """
 
 import sys
-import bacassembly
 import pandas as pd
-from pprint import pprint
+import bacassembly
 
 shell.executable("bash")
 
-BACASSEMBLY_DIR = metapi.__path__[0]
+SAMPLES = bacassembly.parse_samples(config)
 
-SAMPLES = bacassembly.parse_genomes(config)
-
-include: "rules/simulate.smk"
 include: "rules/raw.smk"
 include: "rules/trimming.smk"
 
 
 rule all:
     input:
-        rules.simulate_all.input,
+        rules.trimming_all.input

@@ -26,11 +26,8 @@ import bacassembly
 
 
 WORKFLOWS = [
-    "prepare_reads_all",
     "trimming_all",
-    "rmhost_all",
-    "assembly_short_reads_all",
-    "assembly_long_reads_all",
+    "all"
 ]
 
 
